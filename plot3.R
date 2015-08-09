@@ -8,6 +8,7 @@ df$Sub_metering_1 <- as.numeric(as.character(df$Sub_metering_1))
 df$Sub_metering_2 <- as.numeric(as.character(df$Sub_metering_2))
 df$Sub_metering_3 <- as.numeric(as.character(df$Sub_metering_3))
 
+par(mfrow=c(1,1))
 
 plot(df$timestamp,df$Sub_metering_1, type="l", xlab=""
       , ylab="Energy sub metering")
